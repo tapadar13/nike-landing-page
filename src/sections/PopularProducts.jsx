@@ -9,11 +9,11 @@ const PopularProducts = () => {
           Our <span className="text-coral-red">Popular</span> Products
         </h1>
         <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
-          Experience top-notch quality and style with our sought-after
-          selections. Discover a world of comfort, design and value Embark on a
-          {/* Journey of Unparalleled Quality and Style. Explore our Coveted
-          Collection, where Comfort, Design, and Value unite to redefine your
-          footwear experience */}
+          {/* Experience top-notch quality and style with our sought-after
+          selections. Discover a world of comfort, design and value */}
+          Embark on a Journey of Unparalleled Quality and Style. Explore our
+          Coveted Collection, where Comfort, Design, and Value unite to redefine
+          your footwear experience
         </p>
       </div>
 
