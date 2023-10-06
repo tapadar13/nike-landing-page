@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { arrowRight } from "../assets/icons";
-import { bigShoe1 } from "../assets/images";
-import Button from "../components/Button";
-import ShoeCard from "../components/ShoeCard";
-import { statistics, shoes } from "../constants";
+import { useState } from 'react';
+import { arrowRight } from '../assets/icons';
+import Button from '../components/Button';
+import ShoeCard from '../components/ShoeCard';
+import { bigShoe1 } from '../assets/images';
+import { statistics, shoes } from '../constants';
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
-              <p className="text-4xl font-montserrat font-bold">{stat.value}</p>
+              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray">
                 {stat.label}
               </p>
@@ -53,20 +53,19 @@ const Hero = () => {
           height={502}
           className="object-contain relative z-10"
         />
-      </div>
-
-      <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-        {shoes.map((shoe) => (
-          <div key={shoe}>
-            <ShoeCard
-              imgURL={shoe}
-              changeBigShoeImage={(shoe) => {
-                setBigShoeImg(shoe);
-              }}
-              bigShoeImage={bigShoeImg}
-            />
-          </div>
-        ))}
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+          {shoes.map((shoe) => (
+            <div key={shoe}>
+              <ShoeCard
+                imgURL={shoe}
+                changeBigShoeImage={(shoe) => {
+                  setBigShoeImg(shoe);
+                }}
+                bigShoeImage={bigShoeImg}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
